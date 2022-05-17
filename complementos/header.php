@@ -1,3 +1,3 @@
 <header>
-  <a href="/ncl-login">Your App Name</a>
+  <a href="/ncl-login">Niños Cantores de Lara</a>
 </header>
