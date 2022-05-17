@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;500;600;700&display=swap');
 
-
 /* General */
 body {
   margin: 0;
@@ -24,7 +23,7 @@ input[type="submit"] {
   padding: 10px;
   color: #fff;
   background: #0098cb;
-  width: 320px;
+  width: 342px;
   margin: 20px auto;
   margin-top: 0;
   border: 0;
