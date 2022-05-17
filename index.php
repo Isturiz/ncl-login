@@ -25,19 +25,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <?php require 'complementos/header.php' ?>
 
     <?php if(!empty($user)): ?>
-      <br> Welcome. <?= $user['email']; ?>
-      <br>You are Successfully Logged In
-      <a href="logout.php">
-        Logout  
-      </a>
-    <?php else: ?>
-      <h1>Please Login or SignUp</h1>
 
-      <a href="login.php">Login</a> or
-      <a href="signup.php">SignUp</a>
+      <?php require 'complementos/header-superior.php' ?>
+
+    <?php else: ?>
+      <?php require 'login.php' ?>
     <?php endif; ?>
   </body>
 </html>
