@@ -28,7 +28,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Niños Cantores de Lara</title>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>

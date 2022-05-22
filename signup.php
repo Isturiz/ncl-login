@@ -5,15 +5,16 @@
   $message = '';
   
   // Se comprueba que los campos de email y contraseña no estén vacíos
-  if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
+  if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password']))
+  {
     // Comprobación de igualdad entre las contraseñas
     if ($_POST['password'] == $_POST['confirm_password'])
     {
       $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
       $stmt = $conn->prepare($sql);
       $stmt->bindParam(':email', $_POST['email']);
-      $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-      $stmt->bindParam(':password', $password);
+      /* $password = password_hash($_POST['password'], PASSWORD_BCRYPT); */
+      $stmt->bindParam(':password', $_POST['password']);
 
       if ($stmt->execute()) {
         $message = 'Usuario creado exitosamente';
@@ -31,7 +32,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SignUp</title>
+    <title>Niños Cantores de Lara</title>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
