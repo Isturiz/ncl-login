@@ -4,7 +4,7 @@
 
   $message = '';
       
-  if (!empty($_POST['email']) && !empty($_POST['password'])) {
+  if (!empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['confirm_password'])) {
     $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':email', $_POST['email']);
@@ -37,9 +37,9 @@
     <span>or <a href="login.php">Login</a></span> 
 
     <form action="signup.php" method="POST">
-      <input name="email" type="text" placeholder="Enter your email">
-      <input name="password" type="password" placeholder="Enter your Password">
-      <input name="confirm_password" type="password" placeholder="Confirm Password">
+      <input name="email" type="text" placeholder="Enter your email" required>
+      <input name="password" type="password" placeholder="Enter your Password" required>
+      <input name="confirm_password" type="password" placeholder="Confirm Password" required>
       <input type="submit" value="Submit">
     </form>
 
