@@ -42,15 +42,15 @@
       <p> <?= $message ?></p>
     <?php endif; ?>
 
-    <h1>SignUp</h1>
-    <span>or <a href="login.php">Login</a></span> 
+    <h1>Registrar</h1>
+    <span>o <a href="login.php">Iniciar sesión</a></span> 
 
     <!-- Formulario de registro de un nuevo usuario -->
     <form action="signup.php" method="POST">
-      <input name="email" type="text" placeholder="Enter your email" required>
-      <input name="password" type="password" placeholder="Enter your Password" required>
-      <input name="confirm_password" type="password" placeholder="Confirm Password" required>
-      <input type="submit" value="Submit">
+      <input name="email" type="text" placeholder="Correo electrónico" required>
+      <input name="password" type="password" placeholder="Contraseña" required>
+      <input name="confirm_password" type="password" placeholder="Confirmar contraseña" required>
+      <input type="submit" value="Registrar">
     </form>
 
   </body>

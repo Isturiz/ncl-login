@@ -1,3 +1,5 @@
+<!-- Cabecera al iniciar sesión -->
+
 <nav>
 	<?php
 
@@ -6,5 +8,5 @@
 
   ?>
 
-	<a class="nav-link" href="logout.php">Logout</a>
+	<a class="nav-link" href="logout.php">Salir</a>
 </nav>
